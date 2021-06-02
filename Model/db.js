@@ -1,5 +1,5 @@
-import sequelize  from '../Connection/sequelize';
-import { model } from './index'
+const {sequelize} = require('../Connection/sequelize');
+const { model } =require( './index');
 
 sequelize.sync({ force: false }).then(res => {
     console.log('Yes Sync');
@@ -7,5 +7,5 @@ sequelize.sync({ force: false }).then(res => {
     console.log(err);
 })
 
-export default sequelize;
+module.export = sequelize;
 
