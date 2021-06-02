@@ -1,9 +1,9 @@
-const app = require('express').app();
+const app = require('express').route();
 
-app.get("/add",usercontroller.userAdd);
-app.get("/update",usercontroller.userupdate);
-app.get("/delete",usercontroller.userdelete);
-app.get("/truncate",usercontroller.truncate);
-app.get("/find",usercontroller.find);
+route.get("/add",usercontroller.userAdd);
+route.get("/update",usercontroller.userupdate);
+route.get("/delete",usercontroller.userdelete);
+route.get("/truncate",usercontroller.truncate);
+route.get("/find",usercontroller.find);
 
-module.exports = app;
+module.exports = route;
