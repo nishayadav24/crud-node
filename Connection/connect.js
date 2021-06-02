@@ -1,5 +1,5 @@
-import { Sequelize } from 'sequelize';
-import mysql from 'mysql';
+const { Sequelize }= require( 'sequelize');
+const mysql = require( 'mysql');
 
 class Connection {
     static async Connect() {
@@ -33,4 +33,4 @@ class Connection {
     }
 }
 
-export default Connection;
+module.exports =  Connection;
