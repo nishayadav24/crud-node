@@ -3,4 +3,4 @@ const sequalize = new Sequelize(process.env.database, process.env.user, process.
     dialect: process.env.dialect,
     host: process.env.host
 })
-export default sequalize;
+module.exports= sequalize;
