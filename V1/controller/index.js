@@ -1,4 +1,4 @@
 module.exports = {
-    user: require('./usercont')
+    user: require('./user')
   };
   

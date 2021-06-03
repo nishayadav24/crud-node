@@ -2,11 +2,12 @@ require('./Model/db')
 const express = require('express');
 const connection = require ('./Connection/connect');
 const v1 = require('./V1/Router/index');
-const morgen = require('morgen')
+const morgan = require('morgan')
+const path = require('path')
 const app = express();
 
 app.use(express.json()) //receive request from body
-db.Connect();
+//db.Connect();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

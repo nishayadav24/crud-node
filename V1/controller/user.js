@@ -1,7 +1,7 @@
-var db = require('../models');
+const db = require('../../Model');
 const User=db.user;
-var userAdd = async(req,resp)=>{
-    let data =await User.create({name:"nisha",email:'nisha@gmail.com'});
+const userAdd = async(req,resp)=>{
+    let data =await User.create();
 
     console.log(data.dataValues);
     let response={
