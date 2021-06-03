@@ -5,7 +5,7 @@ class Connection {
     static async Connect() {
         try {
             const sequalize = new Sequelize(process.env.database, process.env.user, process.env.password, {
-                dialect: process.env.dialect,
+                dialect: "mysql",
                 host: process.env.host
             })
             await sequalize.authenticate();
